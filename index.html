@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国开户系统</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://cdn.mxnet.top/view.php/2e929bd7228f0ceaf32cc9daebae5910.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .input-container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .input-container input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-container">
+        <label for="name">请输入您的姓名：</label>
+        <input type="text" id="name" placeholder="姓名">
+        <button onclick="checkName()">提交</button>
+    </div>
+
+    <script>
+        function checkName() {
+            var name = document.getElementById("name").value;
+            if (name === "张嘉锐") {
+                window.location.href = "newpage.html";
+            } else {
+                alert("对不起，您输入的姓名不符合要求。");
+            }
+        }
+    </script>
+</body>
+
+</html>

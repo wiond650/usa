@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张嘉锐的信息</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://cdn.mxnet.top/view.php/2e929bd7228f0ceaf32cc9daebae5910.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 宋体, sans-serif;
+            color: red;
+        }
+
+        .info {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .question {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <p>张嘉锐</p>
+        <p>贵州省贵阳人</p>
+        <p>就读于贵州铜仁伟才学校</p>
+        <p>身份证：52222720091021005x</p>
+    </div>
+
+    <div class="question">
+        <p>你觉得我干的怎么样？</p>
+        <button onclick="optionA()">选项a太好了</button>
+        <button onclick="optionB()">选项b吓死我了</button>
+    </div>
+
+    <script>
+        function optionA() {
+            window.history.back();
+        }
+
+        function optionB() {
+            alert("我操你妈。");
+        }
+    </script>
+</body>
+
+</html>
